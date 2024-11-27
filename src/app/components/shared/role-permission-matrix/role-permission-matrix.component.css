@@ -1,0 +1,72 @@
+/* Container for the matrix */
+.role-permission-matrix {
+    margin: 30px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Very light grey background for a neutral, calming feel */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #4b6e84; /* Soft bluish-grey color for the heading */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  .permission-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .permission-table th, .permission-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #dce1e8; /* Light grey border for soft separation */
+  }
+  
+  .permission-table th {
+    background-color: #80b8d2; /* Soothing light blue background for table header */
+    color: #ffffff; /* White text for the header */
+    font-size: 16px;
+  }
+  
+  .permission-table td {
+    background-color: #ffffff; /* Clean white background for cells */
+    color: #4a4a4a; /* Soft text color for better readability */
+  }
+  
+  /* Checkbox Styling */
+  .mat-checkbox {
+    font-size: 14px;
+    padding: 4px 8px;
+    color: #3c4f67; /* Softer, dark text for checkboxes */
+  }
+  
+  /* Hover Effect on Rows */
+  .permission-table tr:hover {
+    background-color: #e5f0f9; /* Very soft light blue when hovering over rows */
+    cursor: pointer; /* Makes it obvious to click on a row */
+  }
+  
+  /* Add spacing between checkboxes */
+  .mat-checkbox {
+    margin-right: 20px;
+  }
+  
+  /* Responsive Table Design */
+  @media (max-width: 768px) {
+    .permission-table th, .permission-table td {
+      padding: 10px 15px;
+    }
+  
+    .role-permission-matrix {
+      margin: 15px;
+      padding: 15px;
+    }
+  }
+  

@@ -1,0 +1,31 @@
+<div class="role-permission-matrix">
+  <h2>Role Permission Matrix</h2>
+
+  <!-- Add New Role Form -->
+  <div class="add-role-form">
+    <input [(ngModel)]="newRole" placeholder="Enter new role" matInput />
+    <button mat-button (click)="addRole()">Add Role</button>
+  </div>
+
+  <!-- Table to display roles and permissions -->
+  <table mat-table class="permission-table">
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th *ngFor="let permission of permissions">{{ permission }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let role of roles">
+        <td>{{ role }}</td>
+        <td *ngFor="let permission of permissions">
+          <mat-checkbox
+            [checked]="rolePermissionMatrix[role][permission]"
+            (change)="togglePermission(role, permission)">
+            {{ permission }}
+          </mat-checkbox>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

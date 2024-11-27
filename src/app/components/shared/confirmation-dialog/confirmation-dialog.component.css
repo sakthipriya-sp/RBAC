@@ -1,0 +1,14 @@
+mat-dialog-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  mat-dialog-content {
+    margin-bottom: 20px;
+  }
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

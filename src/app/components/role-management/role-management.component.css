@@ -1,0 +1,16 @@
+.role-management {
+    padding: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-checkbox {
+    margin: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
